@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Upcoming Performance | Pen Llyn Players</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    nav {
+      background: #e63946;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 8px #0004;
+      margin: 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+      min-width: 120px;
+      text-align: center;
+      display: inline-block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ffd700;
+      color: #e63946;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.2rem;
+        align-items: center;
+      }
+      nav ul li a {
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+        min-width: unset;
+      }
+    }
+    .content {
+      max-width: 700px;
+      margin: 2.5rem auto 0 auto;
+      padding: 2rem 1.2rem;
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px #0008;
+      border: 2px solid #ffd700;
+      text-align: center;
+    }
+    .title {
+      color: #e63946;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    .placeholder-image {
+      width: 100%;
+      max-width: 420px;
+      height: 240px;
+      background: repeating-linear-gradient(
+        45deg, #ffd700, #ffd700 20px, #e63946 20px, #e63946 40px
+      );
+      border-radius: 10px;
+      margin: 0 auto 2rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      border: 2px solid #b8860b;
+      box-shadow: 0 0 0 4px #fff2 inset;
+    }
+    .details {
+      color: #ffd700;
+      font-style: italic;
+      margin-top: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="performance.html" class="active">Upcoming Performance</a></li>
+      <li><a href="previous.html">Previous Performances</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="title">Upcoming Performance</div>
+    <div class="placeholder-image">
+      Performance Poster<br>(Coming Soon)
+    </div>
+    <div class="details">
+      Details of our next show will appear here!
+    </div>
+  </div>
+</body>
+</html>

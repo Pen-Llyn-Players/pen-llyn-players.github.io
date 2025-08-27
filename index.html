@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pen Llyn Players</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    nav {
+      background: #e63946;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 8px #0004;
+      margin: 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+      min-width: 120px;
+      text-align: center;
+      display: inline-block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ffd700;
+      color: #e63946;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.2rem;
+        align-items: center;
+      }
+      nav ul li a {
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+        min-width: unset;
+      }
+    }
+    .welcome {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-top: 2rem;
+      color: #e63946; /* Red accent */
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 2rem 0;
+      width: 90vw;
+      max-width: 600px;
+    }
+    .logo-svg {
+      width: 100%;
+      height: auto;
+      max-height: 320px;
+      display: block;
+      margin: 0 auto;
+    }
+    @media (max-width: 600px) {
+      .welcome {
+        font-size: 2rem;
+      }
+      .logo-container {
+        max-width: 98vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="performance.html">Upcoming Performance</a></li>
+      <li><a href="previous.html">Previous Performances</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <div class="welcome">Welcome</div>
+  <div class="logo-container">
+    <!-- SVG Logo with Society Name inside -->
+    <svg class="logo-svg" viewBox="0 0 600 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Rough outline of the Llyn Peninsula (stylized) -->
+      <path d="M60,260 Q150,100 350,120 Q450,100 500,150 Q570,210 480,260 Q420,300 300,250 Q180,200 60,260 Z"
+            fill="#222" stroke="#ffd700" stroke-width="6"/>
+      <!-- Happy mask -->
+      <ellipse cx="180" cy="180" rx="40" ry="50" fill="#ffd700" stroke="#b8860b" stroke-width="4"/>
+      <path d="M170,200 Q180,220 190,200" stroke="#b8860b" stroke-width="3" fill="none"/>
+      <ellipse cx="170" cy="185" rx="4" ry="7" fill="#222"/>
+      <ellipse cx="190" cy="185" rx="4" ry="7" fill="#222"/>
+      <!-- Sad mask -->
+      <ellipse cx="270" cy="170" rx="40" ry="50" fill="#ffd700" stroke="#b8860b" stroke-width="4"/>
+      <path d="M260,195 Q270,180 280,195" stroke="#b8860b" stroke-width="3" fill="none"/>
+      <ellipse cx="260" cy="175" rx="4" ry="7" fill="#222"/>
+      <ellipse cx="280" cy="175" rx="4" ry="7" fill="#222"/>
+      <!-- Society name in red, inside logo -->
+      <text x="300" y="295" text-anchor="middle" font-size="38" font-family="Georgia, serif" fill="#e63946"
+            font-weight="bold" stroke="#fff" stroke-width="1" paint-order="stroke fill">
+        Pen Llyn Players
+      </text>
+    </svg>
+  </div>
+</body>
+</html>

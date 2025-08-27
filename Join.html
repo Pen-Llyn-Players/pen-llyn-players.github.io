@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join Us | Pen Llyn Players</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    nav {
+      background: #e63946;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 8px #0004;
+      margin: 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+      min-width: 120px;
+      text-align: center;
+      display: inline-block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ffd700;
+      color: #e63946;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.2rem;
+        align-items: center;
+      }
+      nav ul li a {
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+        min-width: unset;
+      }
+    }
+    .container {
+      max-width: 700px;
+      margin: 2.5rem auto 0 auto;
+      padding: 2rem 1.2rem;
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px #0008;
+      border: 2px solid #ffd700;
+    }
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e63946;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      text-shadow: 1px 1px 8px #ffd70044;
+    }
+    .placeholder {
+      color: #ffd700;
+      font-style: italic;
+      text-align: center;
+      padding: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="performance.html">Upcoming Performance</a></li>
+      <li><a href="previous.html">Previous Performances</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="join.html" class="active">Join Us</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="title">Join Us</div>
+    <div class="placeholder">
+      Information on how to join will appear here.<br>
+      (Add contact details, meeting times, or a sign-up method!)
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery | Pen Llyn Players</title>
+  <style>
+    body {
+      background: #1a1a1a;
+      color: #fff;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+    nav {
+      background: #e63946;
+      padding: 0.5rem 0;
+      box-shadow: 0 2px 8px #0004;
+      margin: 0;
+      position: relative;
+      left: 0;
+      right: 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: #ffd700;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+      min-width: 120px;
+      text-align: center;
+      display: inline-block;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #ffd700;
+      color: #e63946;
+    }
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.2rem;
+        align-items: center;
+      }
+      nav ul li a {
+        font-size: 1rem;
+        padding: 0.3rem 0.7rem;
+        min-width: unset;
+      }
+    }
+    .container {
+      max-width: 900px;
+      margin: 2.5rem auto 0 auto;
+      padding: 2rem 1.2rem;
+      background: #222;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px #0008;
+      border: 2px solid #ffd700;
+    }
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e63946;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      text-shadow: 1px 1px 8px #ffd70044;
+    }
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .gallery-placeholder {
+      width: 230px;
+      height: 150px;
+      background: repeating-linear-gradient(
+        45deg, #ffd700, #ffd700 10px, #e63946 10px, #e63946 20px
+      );
+      border-radius: 9px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      border: 2px solid #b8860b;
+      box-shadow: 0 0 0 4px #fff2 inset;
+      text-align: center;
+    }
+    .gallery-note {
+      color: #ffd700;
+      font-style: italic;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 1rem 0.2rem;
+      }
+      .gallery-placeholder {
+        width: 98vw;
+        max-width: 95vw;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="performance.html">Upcoming Performance</a></li>
+      <li><a href="previous.html">Previous Performances</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="title">Gallery</div>
+    <div class="gallery-grid">
+      <div class="gallery-placeholder">Photo<br>Coming Soon</div>
+      <div class="gallery-placeholder">Photo<br>Coming Soon</div>
+      <div class="gallery-placeholder">Photo<br>Coming Soon</div>
+      <!-- Add more as needed -->
+    </div>
+    <div class="gallery-note">
+      Add your favourite performance photos here!
+    </div>
+  </div>
+</body>
+</html>
